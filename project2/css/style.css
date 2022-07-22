@@ -169,3 +169,95 @@ body {
 	line-height: 32px;
 	color: #2B292D;
 }
+
+.engage_section_bg {
+	background-color: rgba(0, 161, 198, 0.07);
+}
+
+.engage_section {
+	margin: 0 auto;
+
+}
+
+.engage_title_h6 {
+	margin-bottom: 24px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 34px;
+	text-align: center;
+	color: #2B292D;
+}
+
+.engage_title_h1 {
+	max-width: 555px;
+	margin: 0 auto;
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 56px;
+	text-align: center;
+	letter-spacing: -0.5px;
+	color: #2B292D;
+}
+
+.engage_text {
+	max-width: 555px;
+	margin: 30px auto 0;
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+	color: #2B292D;
+}
+
+.engage_buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 34px;
+}
+
+.engage_header_button {
+	width: 160px;
+	height: 48px;
+	margin-right: 8px;
+	background: #3040C4;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 13px;
+	color: #FFFFFF;
+}
+
+.engage_start_button {
+	width: 160px;
+	height: 48px;
+	margin-bottom: 111px;
+	background: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 13px;
+	color: #3040C4;
+}
+
+.engage_img {
+	display: grid;
+	grid-template-colums: repeat(4, 1fr);
+	gap: 30px;
+}
+
+.engage_bg {
+	background-color: #FFFFFF;
+	grid-row-start: 1;
+
+
+
+}
+
+.engage_text {
+	margin-bottom: 33px;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 28px;
+
+}
