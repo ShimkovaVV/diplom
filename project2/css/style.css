@@ -261,3 +261,33 @@ body {
 	line-height: 28px;
 
 }
+
+
+.grid_title {
+	margin: 0 auto 26px;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 66px;
+	text-align: center;
+}
+
+.grid_text {
+	max-width: 554px;
+	margin: 0 auto 97px;
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+	color: #172342;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+	grid-template-rows: repeat(3, 3fr);
+	gap: 4.5%;
+}
+
+.grid_item:nth-child(3),
+.grid_item:nth-child(4) {
+	grid-row: span 2;
+}
