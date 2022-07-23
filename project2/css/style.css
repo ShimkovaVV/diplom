@@ -18,6 +18,14 @@ body {
 	align-items: center;
 }
 
+.flex_start {
+	justify-content: start;
+}
+
+.flex_end {
+	justify-content: end;
+}
+
 .logo_title {
 	font-weight: 700;
 	font-size: 20px;
@@ -52,47 +60,54 @@ body {
 	transition: 100ms;
 }
 
-.header_button {
+.button {
 	width: 160px;
 	height: 48px;
-	margin: 0 0 0 70px;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
 	border: none;
 	border-radius: 5px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 13px;
+
+}
+
+.button_blue {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
 	color: #FFFFFF;
 }
 
-.header_button:hover {
+.button_blue-header {
+	margin: 0 0 0 70px;
+}
+
+.button_blue-header:hover {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #1329f5;
 	transition: 100ms;
 }
 
-.section_start {
+.header_inner {
 	margin: 0 auto;
 	background-color: #F3C6BD;
 	position: relative;
 }
 
-.start_img_block {
+.header_inner_image {
 	position: relative;
 	margin: 0 auto;
 }
 
-.start_img {
+.header_inner_img {
 	position: absolute;
 	bottom: -490px;
 	right: 5px;
 	max-width: 796px;
 }
 
-.start {
+.header_inner-textblock {
 	margin: 0 auto;
 }
 
-.start_title {
+.header_inner_title {
 	margin: o auto;
 	position: relative;
 	max-width: 754px;
@@ -103,7 +118,7 @@ body {
 	color: #2B292D;
 }
 
-.start_text {
+.header_inner_text {
 	position: relative;
 	max-width: 456px;
 	margin-top: 34px;
@@ -112,50 +127,34 @@ body {
 	color: #2B292D;
 }
 
-.start_nav {
+.header_inner-btn {
 	margin-top: 62px;
 }
 
-.start_header_button {
-	width: 160px;
-	height: 48px;
+.button_blue-inner {
 	margin-right: 8px;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
-	border: none;
-	border-radius: 5px;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 13px;
-	color: #FFFFFF;
 }
 
-.start_button {
-	width: 160px;
-	height: 48px;
+.button_white {
 	background: #FFFFFF;
-	border: none;
-	border-radius: 5px;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 13px;
 	color: #3040C4;
 }
 
-.section_what {
+.header_footer {
 	margin: 0 auto;
 	background-color: #F4F5F7;
 }
 
-.what_about {
+.header_footer-left {
 	width: 555px;
 
 }
 
-.who_for {
+.header_footer-right {
 	width: 555px;
 }
 
-.what_title {
+.header_footer_title {
 	margin-bottom: 5px;
 	font-weight: 700;
 	font-size: 22px;
@@ -163,103 +162,196 @@ body {
 	color: #2B292D;
 }
 
-.what_text {
+.header_footer_text {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 32px;
 	color: #2B292D;
 }
 
-.engage_section_bg {
-	background-color: rgba(0, 161, 198, 0.07);
+.inbox {
+	background-color: rgba(252, 240, 227, 0.4);
+	padding: 115px 0 116px;
 }
 
-.engage_section {
-	margin: 0 auto;
-
+.inbox_response {
+	max-width: 519px;
+	width: 100%;
+	background: #FFFFFF;
+	padding: 30px 30px 24px;
+	box-sizing: border-box;
+	border-bottom: 4px solid #0185D0;
 }
 
-.engage_title_h6 {
-	margin-bottom: 24px;
-	font-size: 22px;
+.inbox_text {
+	font-size: 20px;
+	line-height: 28px;
+	color: #2B292D;
+	padding-bottom: 26px;
+}
+
+.info_text-bold {
 	font-weight: 700;
-	line-height: 34px;
-	text-align: center;
+}
+
+.inbox_img {
+	margin-right: 11px;
+}
+
+.inbox_name {
+	font-weight: 700;
+	line-height: 22px;
 	color: #2B292D;
 }
 
-.engage_title_h1 {
-	max-width: 555px;
-	margin: 0 auto;
+.inbox_position {
+	line-height: 22px;
+	color: #2B292D;
+}
+
+.info_pretitle {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 34px;
+	margin-bottom: 26px;
+}
+
+.info_pretitle-orange {
+	color: #F1592B;
+}
+
+.info_title {
+	max-width: 462px;
 	font-size: 56px;
 	font-weight: 700;
 	line-height: 56px;
-	text-align: center;
 	letter-spacing: -0.5px;
 	color: #2B292D;
 }
 
-.engage_text {
-	max-width: 555px;
-	margin: 30px auto 0;
+.info_text {
+	max-width: 461px;
 	font-size: 24px;
 	line-height: 34px;
-	text-align: center;
+	color: #2B292D;
+	margin-bottom: 44px;
+}
+
+.info_pretitle-blue {
+	margin-top: 104px;
+	color: #0189D1;
+}
+
+.info_title-communicate {
+	margin-bottom: 30px;
+}
+
+.button_blue-communicate {
+	margin-top: 39px;
+}
+
+.container-image {
+	position: relative;
+}
+
+.container-image_communicate {
+	position: absolute;
+	bottom: 35px;
+}
+
+.communicate_footer {
+	margin: 129px 0 124px;
+}
+
+.communicate_block {
+	max-width: 360px;
+}
+
+.communicate_text {
+	font-size: 18px;
+	line-height: 26px;
 	color: #2B292D;
 }
 
-.engage_buttons {
+.communicate_text-bold {
+	font-weight: 700;
+}
+
+.communicate_text-link {
+	color: rgba(48, 64, 196, 1);
+	font-weight: 700;
+}
+
+.choice_bg {
+	background-color: rgba(0, 161, 198, 0.07);
+}
+
+.info_pretitle-black {
+	margin: 108px auto 24px;
+	text-align: center;
+}
+
+.info_title-choice {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.info_text-choice {
+	max-width: 555px;
+	margin: 30px auto 34px;
+	text-align: center;
+}
+
+
+.choice_button {
 	display: flex;
 	justify-content: center;
 	margin-top: 34px;
 }
 
-.engage_header_button {
-	width: 160px;
-	height: 48px;
-	margin-right: 8px;
-	background: #3040C4;
-	border: none;
-	border-radius: 5px;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 13px;
-	color: #FFFFFF;
+.button_blue-choice {
+	margin: 0 8px 111px 0;
+
 }
 
-.engage_start_button {
-	width: 160px;
-	height: 48px;
-	margin-bottom: 111px;
-	background: #FFFFFF;
-	border: none;
-	border-radius: 5px;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 13px;
-	color: #3040C4;
-}
 
-.engage_img {
+.choice_img {
 	display: grid;
-	grid-template-colums: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 262px);
 	gap: 30px;
 }
 
-.engage_bg {
+.choice_bg-card {
+	height: 300px;
 	background-color: #FFFFFF;
+	border-radius: 4%;
 	grid-row-start: 1;
+	text-align: center;
+}
 
+.choice_bg-card:hover {
+
+	background-color: #3141C5;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 28px;
+	color: #FFFFFF;
 
 
 }
 
-.engage_text {
-	margin-bottom: 33px;
+
+.choice-image1,
+.choice-image2,
+.choice-image3,
+.choice-image4 {
+	margin: 22px auto;
+}
+
+.choice-text {
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 28px;
-
 }
 
 
@@ -280,7 +372,7 @@ body {
 	color: #172342;
 }
 
-.grid {
+.grid_img {
 	display: grid;
 	grid-template-columns: repeat(3, 3fr);
 	grid-template-rows: repeat(3, 3fr);
