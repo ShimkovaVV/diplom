@@ -30,45 +30,56 @@
 					</p>
 				</div>
 			</div>
-			<nav class="header_nav flex">
-				<ul class="header_ul flex">
-					<li class="header_li">
-						<a class="header_a" href="#">Home</a>
-					</li>
+			<div class="flex header_menu">
+				<input class="header_nav-checkbox" type="checkbox">
+				<div class="header_check-wrapper">
+					<div class="header_nav-check"></div>
+					<div class="header_nav-check"></div>
+					<div class="header_nav-check"></div>
+				</div>
+				<div class="header_nav">
+					<ul class="header_ul flex flex_column">
+						<li class="header_li">
+							<a class="header_a" href="#">Home</a>
+						</li>
 
-					<li class="header_li">
-						<a class="header_a" href="#">Stories</a>
-					</li>
-				</ul>
-				<button class="button button_blue button_blue-header">Get Started</button>
-			</nav>
+						<li class="header_li">
+							<a class="header_a" href="#">Stories</a>
+						</li>
+					</ul>
+					<button class="button button_blue button_blue-header">Get Started</button>
+				</div>
+
+
+			</div>
 		</div>
 	</header>
 
-	<section class="header_inner">
+	<section class="header_inner flex">
+		<div class="container flex header_inner-container">
 
-		<div class="header_inner_image">
-			<img class="header_inner_img" src="./img/section1/ouch.png" alt="startimg">
-		</div>
+			<div class="header_inner-textblock">
 
-		<div class="header_inner-textblock container">
+				<h1 class="header_inner_title">
+					Build stunning websites & apps.
+				</h1>
 
-			<h1 class="header_inner_title">
-				Build stunning websites & apps.
-			</h1>
+				<p class="header_inner_text">
+					Create live segments and target the right people for messages based on their behaviors.
+				</p>
 
-			<p class="header_inner_text">
-				Create live segments and target the right people for messages based on their behaviors.
-			</p>
+				<div class="header_inner-btn">
+					<button class="button button_blue">
+						Get Started
+					</button>
 
-			<div class="header_inner-btn">
-				<button class="button button_blue">
-					Get Started
-				</button>
-
-				<button class="button button_white button_white-inner">
-					Learn More
-				</button>
+					<button class="button button_white button_white-inner">
+						Learn More
+					</button>
+				</div>
+			</div>
+			<div class="header_inner_image">
+				<img class="header_inner_img" src="./img/section1/ouch.png" alt="startimg">
 			</div>
 		</div>
 	</section>
@@ -156,61 +167,65 @@
 
 	</section>
 
-	<section class="communicate">
-		<div class="container flex_column">
-			<div class="info ">
-				<p class="info_pretitle info_pretitle-blue">
-					Communicate Better
-				</p>
-				<h3 class="info_title info_title-communicate">
-					Built for busy small teams
-				</h3>
-				<p class="info_text">
-					Three products that can be used independently or combined together for your company’s needs.
-				</p>
-			</div>
+	<section class="communicate container">
+		<div class="flex flex_column">
 			<div>
-				<button class="button button_blue button_blue-communicate">
-					Get Started
-				</button>
+				<div class="info ">
+					<p class="info_pretitle info_pretitle-blue">
+						Communicate Better
+					</p>
+					<h3 class="info_title info_title-communicate">
+						Built for busy small teams
+					</h3>
+					<p class="info_text">
+						Three products that can be used independently or combined together for your company’s needs.
+					</p>
+				</div>
+				<div>
+					<button class="button button_blue button_blue-communicate">
+						Get Started
+					</button>
 
+				</div>
 			</div>
 
 			<div class="container-image flex flex_end flex_column">
 				<img class="container-image_communicate" src="./img/communicate/ouch.svg" alt="communicate">
 			</div>
 
-			<div class="communicate_footer flex">
-				<div class="communicate_block communicate_block1">
-					<p class="communicate_text">
-						<span class="communicate_text-bold">Subscriptions.</span> Foundation works with the tools and
-						services you
-						already use every day.
-					</p>
+		</div>
 
-					<a class="communicate_text-link" href="">Learn more about subscriptions</a>
-				</div>
+		<div class="communicate_footer flex">
+			<div class="communicate_block communicate_block1">
+				<p class="communicate_text">
+					<span class="communicate_text-bold">Subscriptions.</span> Foundation works with the tools and
+					services you
+					already use every day.
+				</p>
 
-				<div class="communicate_block communicate_block2">
-					<p class="communicate_text">
-						<span class="communicate_text-bold">Felxible Hours.</span> Get started with our simple snippet of
-						JavaScript
-						or easy to install SDKs for iOS and Android.
-					</p>
+				<a class="communicate_text-link" href="">Learn more about subscriptions</a>
+			</div>
 
-					<a class="communicate_text-link" href="#">Get more info about hours</a>
-				</div>
+			<div class="communicate_block communicate_block2">
+				<p class="communicate_text">
+					<span class="communicate_text-bold">Felxible Hours.</span> Get started with our simple snippet of
+					JavaScript
+					or easy to install SDKs for iOS and Android.
+				</p>
 
-				<div class="communicate_block communicate_block3">
-					<p class="communicate_text">
-						<span class="communicate_text-bold">Fast Communication.</span> We offer measures like 2FA and SSO to
-						ensure
-						the safety of your data.
-					</p>
-					<a class="communicate_text-link" href="#">Communication guidelines</a>
-				</div>
+				<a class="communicate_text-link" href="#">Get more info about hours</a>
+			</div>
+
+			<div class="communicate_block communicate_block3">
+				<p class="communicate_text">
+					<span class="communicate_text-bold">Fast Communication.</span> We offer measures like 2FA and SSO to
+					ensure
+					the safety of your data.
+				</p>
+				<a class="communicate_text-link" href="#">Communication guidelines</a>
 			</div>
 		</div>
+
 	</section>
 
 	<section class="choice_bg">
@@ -290,6 +305,140 @@
 			<img class="grid_item grid_item7" src="./img/section_grid/7.png" alt="7">
 		</div>
 	</section>
+
+	<section class="input">
+		<div class="container flex flex_center">
+			<div class="input_image">
+				<img class="input_img" src="./img/input/ouch.png" alt="image">
+			</div>
+
+			<div class="input_inner">
+				<div class="input_info">
+					<h6 class="input_title">Start your free trial.</h6>
+					<p class="input_text">Get notified about company updates, news and blog posts. We hate spam.</p>
+				</div>
+
+				<div class="input_input">
+
+					<input class="input_email" type="email" placeholder="Enter your email">
+					<button class="button button_blue button_blue-input">Get Started</button>
+					<div class="input_checkbox-block">
+						<label class="input_label">
+							<input class="custom_checkbox" type="checkbox">
+							<span class="checkbox-fake"></span>
+							<span class="checkbox-text">Free 14-day trial · Easy setup · Cancel any time. Check
+								out</span>
+						</label>
+						<a class="checkbox-a" href="#">Terms of Use.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="flex container">
+			<div class="footer_logo flex_start ">
+				<div class="footer_logo-inner flex flex_start">
+					<div>
+						<img class="logo" src="./img/footer/Icon.svg" alt="logo-footer">
+					</div>
+					<div>
+						<p class="logo_title">Foundation</p>
+						<p class="logo_text">Startup landing template</p>
+					</div>
+				</div>
+				<div>
+					<p class="footer_main footer_text">
+						Foundation is a website template for startups and small teams. It helps to build a website in no time.
+					</p>
+					<img src="./img/footer/AppStore.png" alt="appstore">
+					<img src="./img/footer/Google Play.png" alt="googleplay">
+				</div>
+			</div>
+
+			<div class="footer_product-left flex ">
+				<div>
+					<p class="footer_product-title">
+						Product
+					</p>
+					<ul class="footer_ul-product">
+						<li class="footer_li-product">
+							<a class="footer_text footer_a" href="#">Acquire Users</a>
+						</li>
+						<li class="footer_li-product">
+							<a class="footer_text footer_a" href="#">Content Marketing</a>
+
+						</li>
+						<li class="footer_li-product">
+							<a class="footer_text footer_a" href="#">Website Templates</a>
+
+						</li>
+						<li class="footer_li-product">
+							<a class="footer_text footer_a" href="#">Customer Management</a>
+
+						</li>
+						<li class="footer_li-product">
+							<a class="footer_text footer_a" href="#">Virtual Inbox</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_product-right ">
+				<div>
+					<p class="footer_product-title">
+						Company
+					</p>
+
+					<ul class="footer_ul-product">
+						<li class="footer_li-product">
+							<a class="footer_text footer_a" href="#">About Foundation</a>
+
+						</li>
+						<li class="footer_li-product">
+							<a class="footer_text footer_a" href="#">Brand Guidelines</a>
+
+						</li>
+						<li class="footer_li-product ">
+							<a class="footer_text footer_a" href="#">Press Kit</a>
+
+						</li>
+						<li class="footer_li-product footer_li_end">
+							<a class="footer_text footer_a " href="#">Support</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<img class="footer_line" src="./img/footer/Line.png">
+
+		<div class="flex container footer_end">
+			<div class="footer_end-ul">
+				<ul class="footer_ul flex flex_start">
+					<li class="footer_li">
+						<a class="footer_a footer_text footer_text-end" href="#">Terms</a>
+					</li>
+					<li class="footer_li">
+						<a class="footer_a footer_text footer_text-end" href="#">Privacy</a>
+					</li>
+					<li class="footer_li">
+						<a class="footer_a footer_text footer_text-end" href="#">License</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_end-icon flex">
+				<a class="footer_a footer_li" href="#">
+					<img src="./img/footer/icon-twitter.png" alt="twitter">
+				</a>
+				<a class="footer_a footer_li" href="#">
+					<img src="./img/footer/icon-fb.png" alt="facebook">
+				</a>
+				<a class="footer_a footer_li" href="#">
+					<img src="./img/footer/LinkedIn.png" alt="link">
+				</a>
+			</div>
+		</div>
+	</footer>
 
 </body>
 
