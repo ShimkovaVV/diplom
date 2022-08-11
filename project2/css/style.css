@@ -102,7 +102,6 @@ body {
 .header_inner {
 	background-color: #F3C6BD;
 	position: relative;
-	padding-bottom: 126px;
 }
 
 .header_inner-container>div:first-of-type {
@@ -137,6 +136,7 @@ body {
 
 .header_inner-btn {
 	margin-top: 62px;
+	margin-bottom: 77px;
 }
 
 .button_blue-inner {
@@ -147,6 +147,7 @@ body {
 	background: #FFFFFF;
 	color: #3040C4;
 }
+
 
 .header_footer {
 	margin: 0 auto;
@@ -176,6 +177,7 @@ body {
 	line-height: 32px;
 	color: #2B292D;
 }
+
 
 .inbox {
 	background-color: rgba(252, 240, 227, 0.4);
@@ -562,6 +564,41 @@ body {
 .custom_checkbox:checked~.checkbox-fake::before {
 	opacity: 1;
 	transition: 1s;
+}
+
+.about_items {
+	max-width: 750px;
+	margin: 0 auto 20px;
+	box-sizing: border-box;
+	padding: 26px 25px;
+	border: 1px solid rgba(43, 41, 45, 0.2);
+	border-radius: 8px;
+}
+
+.about_pretitle {
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 700;
+}
+
+.about-text {
+	margin-top: 3px;
+	max-width: 410px;
+	font-size: 18px;
+	line-height: 26px;
+	display: none;
+}
+
+.about-rotate-icon {
+	transform: rotate(90deg);
+	transition: 300ms;
+}
+
+.change-color {
+	color: #FFFFFF;
+	background-color: rgba(49, 65, 197, 1);
+	border: 1px solid rgba(49, 65, 197, 1);
+	transition: 300ms;
 }
 
 /* Footer  */
