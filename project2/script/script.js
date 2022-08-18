@@ -20,15 +20,21 @@ $('#button').on('click', function (e) {
 
 	if (email == "") {
 		$('#error-email').text('Enter your email')
+		return false
 	}
 	$.ajax({
 		url: 'ajax/telegram.php',
 		type: 'POST',
-		cashe: false,
+		cache: false,
 		data: { 'email': email },
 		dataType: 'html',
-		succes: function () {
-			alert('its okey')
+		beforeSend: function () {
+			$('#button').prop('disabled', true)
+		},
+		success: function () {
+			$('.modal-overlay').fadeIn();
+			$('#email').val('');
+			$('#button').prop('disabled', false)
 		}
 	})
 })
