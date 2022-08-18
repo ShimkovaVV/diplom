@@ -8,7 +8,7 @@ $('.about_items > div').on('click', function () {
 $('.features_item > div').on('click', function () {
 	$(this).children('.features_pretitle').toggleClass('change-color-text');
 	$(this).next('.features_text').slideToggle(300);
-
+	$(this).children('svg').children('path').toggleClass('features_icon-blue');
 })
 
 //https:api.telegram.org/bottoken/getUpdates

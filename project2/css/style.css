@@ -242,7 +242,7 @@ body {
 .features_text {
 	display: none;
 	margin: 10px;
-
+	padding-bottom: 30px;
 	max-width: 459px;
 	font-size: 18px;
 	line-height: 26px;
@@ -266,6 +266,9 @@ body {
 	left: 0;
 }
 
+.features_icon-blue {
+	fill: #0606fa;
+}
 
 /*Inbox**************************************/
 
@@ -647,7 +650,7 @@ body {
 .input_email {
 	width: 385px;
 	height: 48px;
-	padding: 0;
+	padding-left: 17px;
 	margin-top: 2px;
 }
 
@@ -890,9 +893,9 @@ body {
 	width: 50px;
 	height: 50px;
 	color: #FFFFFF;
-	bottom: 60px;
+	bottom: 5vh;
 
-	right: 50px;
+	right: 5vw;
 	font-size: 25px;
 	font-weight: 700;
 	background-color: rgba(243, 198, 189, 1);
@@ -1398,19 +1401,21 @@ body {
 		margin: 0;
 	}
 
+	.input_adap {
+		flex-direction: column-reverse;
+	}
+
 	.input_email {
 		width: 290px;
 		height: 47px;
-		padding: 0;
 		margin-top: 2px;
 		box-sizing: border-box;
 	}
 
-
 	.button_blue-input {
 		width: 290px;
 		height: 47px;
-		margin: 0;
+		margin-left: 8px;
 		border-radius: 3px;
 	}
 
@@ -1446,9 +1451,21 @@ body {
 		margin-right: 46px;
 	}
 
+	.footer .container {
+		max-width: 320px;
+	}
 
 	.footer_product-left {
-		margin: 33px auto;
+		margin: 33px 0;
+	}
+
+	.footer {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer>.flex {
+		align-items: flex-start;
 	}
 
 	.footer_line {
@@ -1624,6 +1641,8 @@ body {
 
 	.button_blue-input {
 		width: 240px;
+		height: 47px;
+		margin-bottom: 0;
 	}
 
 	.grid_title {
@@ -1894,6 +1913,10 @@ body {
 
 	.input_email {
 		width: 150px;
+	}
+
+	.input_email::placeholder {
+		font-size: 14px;
 	}
 
 	.button_blue-input {
@@ -2239,6 +2262,11 @@ body {
 	.button_blue-input {
 		width: 290px;
 		margin: 12px 0 10px;
+	}
+
+	.input_input {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.input_title {
