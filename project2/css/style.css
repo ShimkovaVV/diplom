@@ -797,8 +797,8 @@ body {
 .footer_text {
 	font-size: 18px;
 	line-height: 26px;
-	color: rgba(43, 41, 45, 0.6);
 }
+
 
 .footer_main {
 	max-width: 360px;
@@ -815,10 +815,15 @@ body {
 	color: #2B292D;
 }
 
-.footer_line {
-	width: 100%px;
+.line_none {
+	display: none;
+}
+
+.line {
+	width: 457px;
 	height: 1px;
-	background-color: rgba(43, 41, 45, 0.1);
+	margin-top: 22px;
+	background-color: rgba(43, 41, 45, 0.15);
 }
 
 .footer_ul-product {

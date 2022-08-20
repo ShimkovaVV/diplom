@@ -11,6 +11,13 @@ $('.features_item > div').on('click', function () {
 	$(this).children('svg').children('path').toggleClass('features_icon-blue');
 })
 
+
+$('.features_item').click(function () {
+	$('#line').toggle();
+	$('#line-engage').toggle();
+	$('#line-develop').toggle();
+});
+
 //https:api.telegram.org/bottoken/getUpdates
 
 $('#button').on('click', function (e) {
