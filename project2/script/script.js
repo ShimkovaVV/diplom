@@ -12,11 +12,18 @@ $('.features_item > div').on('click', function () {
 })
 
 
-$('.features_item').click(function () {
-	$('#line').toggle();
-	$('#line-engage').toggle();
-	$('#line-develop').toggle();
+$(function () {
+	$('.features_item').click(function (e) {
+		e.preventDefault();
+		$(this).children('#line').toggleClass('line_none');
+		$(this).children('#line-engage').toggleClass('line_none');
+		$(this).children('#line-develop').toggleClass('line_none');
+
+	});
 });
+
+
+
 
 //https:api.telegram.org/bottoken/getUpdates
 

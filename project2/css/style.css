@@ -820,11 +820,13 @@ body {
 }
 
 .line {
+
 	width: 457px;
 	height: 1px;
 	margin-top: 22px;
 	background-color: rgba(43, 41, 45, 0.15);
 }
+
 
 .footer_ul-product {
 	padding: 0;
