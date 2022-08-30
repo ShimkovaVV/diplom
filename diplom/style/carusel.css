@@ -1,0 +1,25 @@
+.bx-wrapper {
+	box-shadow: none;
+	border: 0;
+	background: #fff;
+	margin-bottom: 60px;
+	padding: 0;
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+	background-color: #FF9700;
+	width: 23px;
+	height: 7px;
+	border-radius: 0;
+
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background-color: #C4C4C4;
+	width: 7px;
+	height: 7px;
+	border-radius: 0;
+}

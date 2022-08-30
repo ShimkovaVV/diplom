@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diplom</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+		integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="./style/carusel.css">
+	<link rel="stylesheet" href="./style/slick.css">
+</head>
+
+<body>
+	<header class="header flex">
+		<div class="container_header-bg">
+			<div class="header_menu flex flex_center container">
+				<div class="header_checkbox">
+					<div class="menu_line"></div>
+					<div class="menu_line"></div>
+					<div class="menu_line-end"></div>
+				</div>
+				<p class="header_logo">BE Arc</p>
+			</div>
+		</div>
+		<div class="header_nav flex container">
+			<div class="flex">
+				<p class="header_text">888 Brannan street/ San Francisco.California</p>
+			</div>
+			<ul class="flex">
+				<li class="header_li">
+					<a class="header_icon" href="#">
+						<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="header_icon-fill"
+								d="M6.75095 5.90744V4.13521C6.75095 3.36724 6.92817 2.95372 8.16874 2.95372H9.70467V0H7.34169C4.38797 0 3.20648 1.94946 3.20648 4.13521V5.90744H0.843506V8.86117H3.20648V17.7223H6.75095V8.86117H9.35022L9.70467 5.90744H6.75095Z"
+								fill="#000E22" />
+						</svg>
+					</a>
+				</li>
+				<li class="header_li">
+					<a class="header_icon" href="#">
+						<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="header_icon-fill"
+								d="M1.13695 4.83652C1.13695 6.40683 1.66144 7.53989 2.69465 8.20523C3.54182 8.75179 4.52353 8.83377 5.03436 8.83377C5.15839 8.83377 5.25824 8.82747 5.32761 8.82326C5.32761 8.82326 5.16574 9.87855 5.94775 10.9212H5.91201C4.55717 10.9212 0.138428 11.204 0.138428 14.8386C0.138428 18.5342 4.19665 18.7223 5.01123 18.7223C5.07535 18.7223 5.11319 18.7202 5.11319 18.7202C5.1216 18.7202 5.17941 18.7223 5.27926 18.7223C5.80165 18.7223 7.15228 18.6572 8.40622 18.0465C10.0333 17.2582 10.8584 15.8823 10.8584 13.963C10.8584 12.1089 9.6013 11.0053 8.68371 10.1981C8.12348 9.70512 7.63893 9.28048 7.63893 8.86741C7.63893 8.44698 7.99315 8.1306 8.43986 7.73014C9.16405 7.08373 9.84725 6.16193 9.84725 4.41924C9.84725 2.88781 9.6486 1.85881 8.42409 1.20609C8.55127 1.14092 9.00323 1.09362 9.22606 1.06209C9.8893 0.971696 10.8594 0.868691 10.8594 0.327385V0.223328H6.02553C5.97718 0.22543 1.13695 0.404113 1.13695 4.83652ZM8.94017 14.3099C9.03267 15.7877 7.76822 16.8777 5.86892 17.0154C3.94018 17.1573 2.35305 16.2891 2.26056 14.8123C2.21536 14.1018 2.52753 13.4081 3.13821 12.8542C3.7573 12.2939 4.60762 11.9471 5.53257 11.8788C5.64188 11.8724 5.75014 11.8661 5.8584 11.8661C7.64419 11.8672 8.85293 12.9162 8.94017 14.3099ZM7.67782 3.82433C8.15186 5.49344 7.43608 7.23613 6.2946 7.55881C6.1632 7.59543 6.02739 7.61382 5.89099 7.61347C4.84621 7.61347 3.8109 6.55608 3.42621 5.09824C3.21179 4.2826 3.22965 3.56576 3.47561 2.87836C3.7163 2.20041 4.15145 1.74529 4.69801 1.59078C4.8294 1.55399 4.96499 1.53508 5.10268 1.53508C6.36397 1.53508 7.17541 2.05851 7.67782 3.82433ZM15.8636 7.37067V4.21743H13.7615V7.37067H10.6082V9.47283H13.7615V12.6261H15.8636V9.47283H19.0169V7.37067H15.8636Z"
+								fill="#000E22" />
+						</svg>
+					</a>
+				</li>
+				<li class="header_li">
+					<a class="header_icon" href="#">
+						<svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="header_icon-fill"
+								d="M18.3355 4.10263C18.3486 4.27301 18.3486 4.44242 18.3486 4.61183C18.3486 9.79637 14.2616 15.7705 6.79238 15.7705C4.49122 15.7705 2.35342 15.127 0.554443 14.0092C0.881163 14.0453 1.19578 14.0579 1.53561 14.0579C3.36382 14.0622 5.14027 13.4719 6.5786 12.3823C5.73096 12.3675 4.90927 12.0975 4.22827 11.61C3.54726 11.1225 3.04093 10.4418 2.77997 9.66299C3.03106 9.69901 3.28316 9.72335 3.54736 9.72335C3.91139 9.72335 4.27744 9.67467 4.61727 9.58997C3.69737 9.41064 2.8702 8.92922 2.2764 8.22756C1.6826 7.52591 1.35883 6.64733 1.36015 5.74123V5.69255C1.90166 5.98367 2.52989 6.16573 3.19543 6.19007C2.63788 5.83235 2.1807 5.34694 1.86469 4.77714C1.54868 4.20735 1.38366 3.57089 1.38435 2.92454C1.38435 2.19627 1.58502 1.52837 1.93695 0.94614C2.95759 2.15832 4.23055 3.15 5.6734 3.85694C7.11624 4.56389 8.69679 4.97033 10.3127 5.04996C10.2502 4.75788 10.2118 4.45508 10.2118 4.15131C10.2116 3.63622 10.3165 3.12614 10.5205 2.65021C10.7245 2.17429 11.0237 1.74186 11.4009 1.37764C11.7782 1.01342 12.226 0.724554 12.719 0.527558C13.2119 0.330562 13.7402 0.229298 14.2737 0.229554C15.4434 0.229554 16.4992 0.702734 17.2414 1.468C18.1507 1.29822 19.0227 0.977707 19.8188 0.520667C19.5157 1.42693 18.8808 2.1954 18.033 2.68211C18.8395 2.5933 19.6277 2.38852 20.3714 2.07457C19.8159 2.85648 19.1276 3.54216 18.3355 4.10263V4.10263Z"
+								fill="#000E22" />
+						</svg>
+					</a>
+				</li>
+				<li class="header_li">
+					<a class="header_icon" href="#">
+						<svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="header_icon-fill"
+								d="M0.944092 13.2979V0.245239H5.5161C7.09987 0.245239 8.30114 0.55004 9.11992 1.15964C9.93869 1.76327 10.3481 2.65077 10.3481 3.82216C10.3481 4.46165 10.1837 5.02642 9.85502 5.51649C9.52632 6.00059 9.06912 6.35619 8.48342 6.5833C9.15279 6.75064 9.67872 7.08831 10.0612 7.59631C10.4497 8.10431 10.6439 8.72586 10.6439 9.46097C10.6439 10.716 10.2435 11.6663 9.44265 12.3118C8.6418 12.9572 7.50029 13.2859 6.01812 13.2979H0.944092ZM3.63351 7.61424V11.1374H5.93744C6.57095 11.1374 7.06401 10.988 7.41662 10.6891C7.77521 10.3843 7.9545 9.96598 7.9545 9.43408C7.9545 8.23878 7.33594 7.63217 6.09881 7.61424H3.63351ZM3.63351 5.71372H5.62368C6.98034 5.68981 7.65867 5.14894 7.65867 4.0911C7.65867 3.49943 7.48535 3.0751 7.13871 2.81811C6.79805 2.55515 6.25718 2.42367 5.5161 2.42367H3.63351V5.71372Z"
+								fill="#000E22" />
+							<path class="header_icon-fill"
+								d="M16.964 13.4772C15.5416 13.4772 14.3822 13.0409 13.4857 12.1683C12.5952 11.2958 12.15 10.1333 12.15 8.68104V8.43003C12.15 7.45586 12.3383 6.58628 12.7148 5.8213C13.0913 5.05033 13.6232 4.45866 14.3105 4.04628C15.0038 3.62793 15.7927 3.41875 16.6772 3.41875C18.004 3.41875 19.0469 3.8371 19.8059 4.67381C20.5709 5.51052 20.9533 6.69685 20.9533 8.2328V9.29064H14.7767C14.8603 9.92415 15.1113 10.4321 15.5297 10.8146C15.954 11.1971 16.4889 11.3884 17.1344 11.3884C18.1324 11.3884 18.9124 11.0268 19.4742 10.3037L20.7472 11.729C20.3587 12.2789 19.8328 12.7092 19.1694 13.02C18.506 13.3248 17.7709 13.4772 16.964 13.4772ZM16.6682 5.51649C16.1542 5.51649 15.7359 5.68981 15.4131 6.03645C15.0964 6.38308 14.8932 6.87913 14.8035 7.52459H18.4074V7.3184C18.3954 6.74466 18.24 6.3024 17.9412 5.99162C17.6424 5.67487 17.218 5.51649 16.6682 5.51649Z"
+								fill="#000E22" />
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section class="main container flex">
+		<div class="main_block_all flex_column">
+			<div class="main_line"></div>
+			<div class="main_block">
+				<p class="main_block-title">Be heaven</p>
+				<p class="main_block-text">Your Architecture</p>
+			</div>
+			<img class="main_fon" src="./img/section_main/image .svg">
+		</div>
+		<p class="main_img-pretitle">SKY</p>
+		<div class="main_block-img flex">
+			<div class="main_container_image">
+				<img class="main_container_image-img" src="./img/section_main/main.png" alt="main">
+			</div>
+			<div class="main_text-img">
+				<p class="main_img-title">BUILDING</p>
+				<a class="main_img-text" href="#">
+					<p>See project ></p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="about container-min flex">
+		<div class="flex flex_start">
+			<div class="about_image">
+				<img class="about_image-main" src="./img/section_about/rectangle 3.png">
+				<img class="about_image-img" src="./img/section_about/image 3.svg">
+			</div>
+			<div>
+				<div class="about_block-text">
+					<p class="about_pretitle">ABOUT US</p>
+					<p class="about_title">
+						Welcom to BeArc
+						Architecture
+					</p>
+					<p class="about_text">
+						For us, design the means. The starting points are goals,strategies and expe-
+						tations, but it transcends them to create a new and better reality. Design is
+						transformative. For us, designis the means. The staring points are goals, strate-
+						gies and expectations, but is transcends them to create a new and better
+						reality. Design is transformative
+					</p>
+				</div>
+				<div class="about_block-number flex flex_start container_about">
+					<p class="about-number">18</p>
+					<div>
+						<p class="about-number-text">
+							Years Experience
+							working
+						</p>
+						<div class="about-line"></div>
+					</div>
+				</div>
+				<button class="about_button">
+					Order a design
+				</button>
+			</div>
+		</div>
+	</section>
+	<section class="choice container">
+		<p class="choice_title container-min">Lastest Projects</p>
+		<div class="">
+			<div class="choice_block slider">
+				<div>
+					<div class="choice_img">
+						<div class="choice_bg-text">
+							<p>Cadillac House</p>
+							<p>New York, New York</p>
+							<p>Cadillac's historic headquarters relocation
+								marks a new era for the iconic automaker.
+								Beneath the headquarters in New York's
+								Soho neighborhood, Cadillac House.
+								Involved in the schematic and concept package
+								for the experiential brand center - serves as
+								a rotating space for events, concerts,
+								and collaborative partnerships.</p>
+							<a href="#">See project >></a>
+						</div>
+						<img class="choice_image" src="./img/section_slider/1.png">
+					</div>
+					<div class="flex choice_container">
+						<div class="choice_line"></div>
+						<p class="choice_img-text">Becam Hotel</p>
+					</div>
+				</div>
+				<div>
+					<div class="choice_img">
+						<div class="choice_bg-text">
+							<p>Cadillac House</p>
+							<p>New York, New York</p>
+							<p>Cadillac's historic headquarters relocation
+								marks a new era for the iconic automaker.
+								Beneath the headquarters in New York's
+								Soho neighborhood, Cadillac House.
+								Involved in the schematic and concept package
+								for the experiential brand center - serves as
+								a rotating space for events, concerts,
+								and collaborative partnerships.</p>
+							<a href="#">See project >></a>
+						</div>
+						<img class="choice_image" src="./img/section_slider/2.png">
+					</div>
+					<div class="flex choice_container">
+						<div class="choice_line"></div>
+						<p class="choice_img-text">Becam Hotel</p>
+					</div>
+				</div>
+				<div>
+					<div class="choice_img">
+						<div class="choice_bg-text">
+							<p>Cadillac House</p>
+							<p>New York, New York</p>
+							<p>Cadillac's historic headquarters relocation
+								marks a new era for the iconic automaker.
+								Beneath the headquarters in New York's
+								Soho neighborhood, Cadillac House.
+								Involved in the schematic and concept package
+								for the experiential brand center - serves as
+								a rotating space for events, concerts,
+								and collaborative partnerships.</p>
+							<a href="#">See project >></a>
+						</div>
+						<img class="choice_image" src="./img/section_slider/3.png">
+					</div>
+					<div class="flex choice_container">
+						<div class="choice_line"></div>
+						<p class="choice_img-text">Becam Hotel</p>
+					</div>
+				</div>
+				<div>
+					<div class="choice_img">
+						<div class="choice_bg-text">
+							<p>Cadillac House</p>
+							<p>New York, New York</p>
+							<p>Cadillac's historic headquarters relocation
+								marks a new era for the iconic automaker.
+								Beneath the headquarters in New York's
+								Soho neighborhood, Cadillac House.
+								Involved in the schematic and concept package
+								for the experiential brand center - serves as
+								a rotating space for events, concerts,
+								and collaborative partnerships.</p>
+							<a href="#">See project >></a>
+						</div>
+						<img class="choice_image" src="./img/section_slider/4.png">
+					</div>
+					<div class="flex choice_container">
+						<div class="choice_line"></div>
+						<p class="choice_img-text">Becam Hotel</p>
+					</div>
+				</div>
+				<div>
+					<div class="choice_img">
+						<div class="choice_bg-text">
+							<p>Cadillac House</p>
+							<p>New York, New York</p>
+							<p>Cadillac's historic headquarters relocation
+								marks a new era for the iconic automaker.
+								Beneath the headquarters in New York's
+								Soho neighborhood, Cadillac House.
+								Involved in the schematic and concept package
+								for the experiential brand center - serves as
+								a rotating space for events, concerts,
+								and collaborative partnerships.</p>
+							<a href="#">See project >></a>
+						</div>
+						<img class="choice_image" src="./img/section_slider/3.png">
+					</div>
+					<div class="flex choice_container">
+						<div class="choice_line"></div>
+						<p class="choice_img-text">Becam Hotel</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="consulting container-min">
+		<div class="flex flex_start">
+			<div>
+				<div class="consulting_block-text">
+					<p class="consulting_pretitle">WHAT WE DO</p>
+					<p class="consulting_title">Be heaven
+						Your Architecture</p>
+					<p class="consulting_text">For us, design the means. The starting points are goals,strategies and expe-
+						tations, but it transcends them to create a new and better reality. Design is
+						transformative. For us, designis the means.</p>
+				</div>
+				<div class="flex ">
+					<div class="consulting_icon">
+						<div class="flex consulting_icon-block">
+							<img src="./img/section_consulting/1.svg">
+							<p class="icon-text-txt">Consulting</p>
+						</div>
+						<div class="consulting_line-right"></div>
+						<div class="flex consulting_icon-block">
+							<img src="./img/section_consulting/3.svg">
+							<p class="icon-text icon-text-txt ">Interior Design</p>
+						</div>
+					</div>
+					<div class="consulting_line"></div>
+					<div class="consulting_icon">
+						<div class="flex consulting_icon-block">
+							<img src="./img/section_consulting/2.svg">
+							<p class="icon-text-txt">Consulting</p>
+						</div>
+
+						<div class="flex consulting_icon-block">
+							<img src="./img/section_consulting/4.svg">
+							<p class="icon-text icon-text-txt ">Product Design</p>
+						</div>
+					</div>
+				</div>
+				<button class="about_button consulting_btn">Order a design</button>
+			</div>
+			<div class="consulting_image">
+				<img class="consulting_image-main" src="./img/section_consulting/main.png">
+				<img class="consulting_image-fon" src="./img/section_consulting/fon.svg">
+			</div>
+		</div>
+	</section>
+	<section class="client container">
+		<div class="client-bg">
+			<p class="client_title">Our Clients & Testerminal</p>
+			<div class="flex container-min flex_start">
+				<div class="client_image">
+					<img class="client_img-main" src="./img/section_client/main.png">
+					<img class="client_img-fon" src="./img/section_client/fon.svg">
+				</div>
+				<div class="client_text-block">
+					<p class="client_pretitle">
+						Antonio Hernandez
+					</p>
+					<p class="client_title-min">
+						NASA
+					</p>
+					<div class="flex flex_start">
+						<img src="./img/section_client/koma.svg">
+						<p class="client_text">
+							Love is like a butterfly, the more you chase it, the more it will elude you.
+							But if you turn your attention towards other things it will come and softly
+							sit on your shoulder.
+						</p>
+					</div>
+					<div class="client-icon-block slider_icon">
+
+						<div>
+							<img src="./img/section_client/logo1.svg">
+						</div>
+						<div>
+							<img src="./img/section_client/logo2.svg">
+						</div>
+						<div>
+							<img src="./img/section_client/logo3.svg">
+						</div>
+						<div>
+							<img src="./img/section_client/logo4.svg">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blog">
+		<div class="container-min">
+			<div>
+				<p class="blog_title">
+					New & Blog
+				</p>
+			</div>
+			<div class="flex">
+				<div class="blog_image-block">
+					<img src="./img/section_blog/1.png">
+					<div class="blog_text-block flex">
+						<div class="blog_line"></div>
+						<p class="blog_text">
+							There are many
+							variations
+						</p>
+					</div>
+				</div>
+
+				<div class="blog_image-block">
+					<img src="./img/section_blog/2.png">
+					<div class="blog_text-block flex">
+						<div class="blog_line"></div>
+						<p class="blog_text">
+							There are many
+							variations
+						</p>
+					</div>
+				</div>
+
+				<div class="blog_image-block">
+					<img src="./img/section_blog/3.png">
+					<div class="blog_text-block flex">
+						<div class="blog_line"></div>
+						<p class="blog_text">
+							There are many
+							variations
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="footer">
+		<div class="footer_line"></div>
+		<div class="flex container-min">
+			<div>
+				<p class="footer_logo">
+					BE Arc
+				</p>
+				<p class="footer_text">
+					BeArt All Rights Resevered
+					888 Brannan Street / San Francisco, California
+				</p>
+			</div>
+			<div class="flex flex_column flex_start">
+				<a class="footer_a" href="#">
+					Term & Conditions
+				</a>
+				<a class="footer_a" href="#">
+					Privacy Policy
+				</a>
+				<a class="footer_a" href="#">
+					Help
+				</a>
+				<a class="footer_a" href="#">
+					Comunication
+				</a>
+			</div>
+			<div class="flex flex_column flex_start">
+				<a class="footer_a" href="#">
+					About
+				</a>
+				<a class="footer_a" href="#">
+					Service
+				</a>
+				<a class="footer_a" href="#">
+					Contact
+				</a>
+			</div>
+			<div class="footer_end">
+				<div class="flex">
+					<p class="footer_text-span">
+						Select Language:
+					</p>
+					<a class="footer_icon-text" href="#">
+						EN
+					</a>
+					<img src="./img/section_footer/control.svg">
+				</div>
+				<div class="flex footer_icon-block">
+					<div class="footer_icon">
+						<svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="footer_icon-color"
+								d="M5.20117 5.91108V4.34386C5.20117 3.66473 5.3572 3.29905 6.44945 3.29905H7.80175V0.687012H5.72128C3.1207 0.687012 2.08047 2.41095 2.08047 4.34386V5.91108H0V8.52312H2.08047V16.3592H5.20117V8.52312H7.48968L7.80175 5.91108H5.20117Z"
+								fill="#000E22" />
+						</svg>
+					</div>
+					<div class="footer_icon">
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="footer_icon-color"
+								d="M1.07373 4.07954C1.07373 5.46819 1.53551 6.47019 2.44519 7.05855C3.19108 7.54189 4.05542 7.61439 4.50517 7.61439C4.61437 7.61439 4.70228 7.60881 4.76336 7.60509C4.76336 7.60509 4.62084 8.5383 5.30935 9.46036H5.27789C4.08503 9.46036 0.19458 9.71039 0.19458 12.9246C0.19458 16.1927 3.76761 16.359 4.48481 16.359C4.54126 16.359 4.57457 16.3572 4.57457 16.3572C4.58198 16.3572 4.63287 16.359 4.72079 16.359C5.18072 16.359 6.36988 16.3014 7.4739 15.7614C8.90645 15.0643 9.6329 13.8476 9.6329 12.1503C9.6329 10.5107 8.5261 9.53472 7.71821 8.82087C7.22496 8.38494 6.79835 8.00942 6.79835 7.64413C6.79835 7.27234 7.11021 6.99256 7.50352 6.63842C8.14113 6.06679 8.74265 5.25162 8.74265 3.71053C8.74265 2.35626 8.56774 1.44629 7.48963 0.869074C7.60161 0.811446 7.99954 0.769618 8.19573 0.741734C8.77966 0.661798 9.63382 0.570707 9.63382 0.0920196V0H5.37783C5.33527 0.00185898 1.07373 0.159872 1.07373 4.07954ZM7.94401 12.457C8.02545 13.7639 6.91218 14.7278 5.23995 14.8495C3.54181 14.975 2.14443 14.2073 2.063 12.9013C2.0232 12.273 2.29805 11.6595 2.83572 11.1697C3.38079 10.6743 4.12945 10.3675 4.94381 10.3071C5.04006 10.3015 5.13538 10.296 5.23069 10.296C6.80298 10.2969 7.8672 11.2245 7.94401 12.457ZM6.83259 3.18444C7.24995 4.66047 6.61974 6.20156 5.61474 6.48692C5.49905 6.5193 5.37948 6.53556 5.25938 6.53525C4.33952 6.53525 3.42798 5.60018 3.08928 4.31098C2.9005 3.58969 2.91623 2.95578 3.13278 2.34789C3.3447 1.74837 3.72782 1.3459 4.20903 1.20927C4.32471 1.17674 4.44409 1.16 4.56532 1.16C5.67582 1.16 6.39024 1.62289 6.83259 3.18444ZM14.0397 6.32054V3.53207H12.1889V6.32054H9.41265V8.17952H12.1889V10.968H14.0397V8.17952H16.816V6.32054H14.0397Z"
+								fill="#000E22" />
+						</svg>
+					</div>
+					<div class="footer_icon">
+						<svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="footer_icon-color"
+								d="M15.9557 4.31517C15.9673 4.46585 15.9673 4.61566 15.9673 4.76547C15.9673 9.35027 12.3689 14.6333 5.79268 14.6333C3.76664 14.6333 1.88443 14.0642 0.300537 13.0758C0.588195 13.1076 0.8652 13.1188 1.1644 13.1188C2.77404 13.1226 4.33809 12.6006 5.60446 11.6371C4.85817 11.624 4.13472 11.3852 3.53513 10.9541C2.93554 10.523 2.48975 9.92102 2.25999 9.23231C2.48106 9.26417 2.70302 9.28569 2.93563 9.28569C3.25614 9.28569 3.57842 9.24264 3.87762 9.16774C3.0677 9.00915 2.33943 8.58342 1.81662 7.96293C1.29381 7.34245 1.00876 6.56551 1.00992 5.76423V5.72118C1.48668 5.97861 2.0398 6.13962 2.62578 6.16114C2.13488 5.8448 1.73237 5.41554 1.45414 4.91166C1.17591 4.40778 1.03061 3.84495 1.03122 3.27337C1.03122 2.62935 1.2079 2.0387 1.51776 1.52383C2.41637 2.59578 3.53714 3.47274 4.80748 4.09791C6.07783 4.72307 7.46941 5.0825 8.89211 5.15292C8.83706 4.89462 8.80333 4.62685 8.80333 4.35822C8.80309 3.90272 8.89544 3.45165 9.07507 3.03078C9.25471 2.60991 9.51812 2.2275 9.85025 1.90541C10.1824 1.58332 10.5767 1.32788 11.0107 1.15367C11.4447 0.979461 11.9098 0.889911 12.3795 0.890137C13.4094 0.890137 14.339 1.30858 14.9924 1.98532C15.793 1.83518 16.5608 1.55174 17.2617 1.14757C16.9949 1.949 16.4358 2.62857 15.6894 3.05898C16.3994 2.98044 17.0934 2.79935 17.7483 2.52172C17.2592 3.21318 16.6531 3.81954 15.9557 4.31517Z"
+								fill="#000E22" />
+						</svg>
+					</div>
+					<div class="footer_icon">
+						<svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="footer_icon-color"
+								d="M0.383057 12.2151V0.672363H4.40845C5.80287 0.672363 6.86052 0.941904 7.5814 1.48099C8.30229 2.01478 8.66273 2.79962 8.66273 3.83551C8.66273 4.40102 8.51803 4.90046 8.22862 5.33384C7.93922 5.76194 7.53668 6.0764 7.02101 6.27723C7.61034 6.42522 8.0734 6.72383 8.41016 7.17306C8.75219 7.6223 8.9232 8.17195 8.9232 8.82202C8.9232 9.9319 8.57065 10.7722 7.86555 11.343C7.16045 11.9138 6.15542 12.2045 4.85045 12.2151H0.383057ZM2.75093 7.18892V10.3045H4.77942C5.33718 10.3045 5.77129 10.1724 6.08175 9.90811C6.39747 9.63857 6.55532 9.26861 6.55532 8.79824C6.55532 7.74121 6.01071 7.20477 4.92149 7.18892H2.75093ZM2.75093 5.50825H4.50316C5.69763 5.48711 6.29486 5.00881 6.29486 4.07334C6.29486 3.55011 6.14226 3.17487 5.83707 2.94761C5.53714 2.71506 5.06093 2.59879 4.40845 2.59879H2.75093V5.50825Z"
+								fill="#000E22" />
+							<path class="footer_icon-color"
+								d="M14.4877 12.3736C13.2354 12.3736 12.2146 11.9878 11.4253 11.2162C10.6412 10.4446 10.2492 9.4166 10.2492 8.13231V7.91034C10.2492 7.04886 10.415 6.27988 10.7465 5.60338C11.078 4.9216 11.5463 4.39837 12.1514 4.0337C12.7618 3.66374 13.4564 3.47876 14.2351 3.47876C15.4033 3.47876 16.3215 3.84872 16.9898 4.58864C17.6633 5.32856 18.0001 6.37765 18.0001 7.73593V8.67139H12.5618C12.6355 9.23162 12.8565 9.68085 13.2248 10.0191C13.5984 10.3573 14.0694 10.5265 14.6377 10.5265C15.5164 10.5265 16.2031 10.2067 16.6977 9.56722L17.8185 10.8277C17.4765 11.314 17.0134 11.6945 16.4294 11.9693C15.8453 12.2389 15.1981 12.3736 14.4877 12.3736ZM14.2272 5.33384C13.7747 5.33384 13.4064 5.48711 13.1222 5.79365C12.8434 6.10018 12.6644 6.53885 12.5855 7.10964H15.7585V6.9273C15.748 6.41993 15.6111 6.02883 15.348 5.75401C15.0849 5.4739 14.7113 5.33384 14.2272 5.33384Z"
+								fill="#000E22" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+		</script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="./script/bxslider.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="./script/slick.min.js"></script>
+</body>
+
+</html>
